@@ -1,0 +1,14 @@
+def even-average():
+    num=int(input("Integer? "))
+    sum=0
+    count=0
+    average=0
+    
+    while num!=0:
+        if num%2==0:
+            sum+=num
+            count+=1
+            if(count!=0):
+                average=float(sum/count)
+        num=int(input("Integer? "))
+    return print("Average: "+str(average))
